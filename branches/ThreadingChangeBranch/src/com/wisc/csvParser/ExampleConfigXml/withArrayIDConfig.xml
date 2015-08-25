@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<sourceConfiguration>
+	<DataParserConfiguration type='DataParserCSIArrayID'>
+		<SourceFile>C:\Documents and Settings\lawinslow.LIMNOLOGY\Desktop\MEShort.dat</SourceFile>
+		<ArrayIDIndex>0</ArrayIDIndex>
+		<ArrayID id='1'>
+			<DateTimeFormat type='CSIYEAR_DAYNUM_TYPE'>
+				<YearIndex>1</YearIndex>
+				<DaynumIndex>2</DaynumIndex>
+				<TimeIndex>3</TimeIndex>
+			</DateTimeFormat>
+			<Columns>
+				<Column index='0'><ColType>ignore</ColType></Column>
+				<Column index='1'><ColType>ignore</ColType></Column>
+				<Column index='2'><ColType>ignore</ColType></Column>
+				<Column index='3'><ColType>ignore</ColType></Column>
+				<Column index='4'><ColType>data</ColType><MetaData><UTCOffset>-6</UTCOffset><Site>MENDOTA_PIER</Site><Variable>WATER_TEMP</Variable><Source>CFL</Source><Sensor></Sensor><Unit>C</Unit><AggMeth>Inst</AggMeth><AggSpan>00:00:00</AggSpan><Offset>2</Offset><OffsetType>DEPTH</OffsetType></MetaData></Column>
+			</Columns>
+		</ArrayID>
+		<ArrayID id='200'>
+			<DateTimeFormat type='CSIYEAR_DAYNUM_TYPE'>
+				<YearIndex>1</YearIndex>
+				<DaynumIndex>2</DaynumIndex>
+				<TimeIndex>-1</TimeIndex>
+			</DateTimeFormat>
+			<Columns>
+				<Column index='0'><ColType>ignore</ColType></Column>
+				<Column index='1'><ColType>ignore</ColType></Column>
+				<Column index='2'><ColType>ignore</ColType></Column>
+				<Column index='3'><ColType>ignore</ColType></Column>
+				<Column index='4'><ColType>ignore</ColType></Column>
+				<Column index='5'><ColType>ignore</ColType></Column>
+				<Column index='6'><ColType>data</ColType><MetaData><UTCOffset>-6</UTCOffset><Site>MENDOTA_BUOY</Site><Variable>DATALOGGER_BATT</Variable><Source>CFL</Source><Sensor></Sensor><Unit>V</Unit><AggMeth>Mean</AggMeth><AggSpan>24:00:00</AggSpan><Offset></Offset><OffsetType></OffsetType></MetaData></Column>
+				<Column index='7'><ColType>data</ColType><MetaData><UTCOffset>-6</UTCOffset><Site>MENDOTA_BUOY</Site><Variable>RADIO_BATT</Variable><Source>CFL</Source><Sensor></Sensor><Unit>V</Unit><AggMeth>Mean</AggMeth><AggSpan>24:00:00</AggSpan><Offset></Offset><OffsetType></OffsetType></MetaData></Column>
+			</Columns>
+		</ArrayID>
+	</DataParserConfiguration>
+</sourceConfiguration>

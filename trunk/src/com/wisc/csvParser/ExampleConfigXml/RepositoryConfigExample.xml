@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<DataRepositoryConfig type='MYSQL_VEGA'>
+    <DatabasePath>dev.limnopedia.org</DatabasePath>
+    <DatabaseUsername>vegaUser</DatabaseUsername>
+    <DatabasePassword>pass4vega</DatabasePassword>
+    <DatabaseName>vega</DatabaseName>
+</DataRepositoryConfig>

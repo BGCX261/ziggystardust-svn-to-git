@@ -1,0 +1,7 @@
+INFO  ZiggyStardust - Logger Setup. Starting App.
+INFO  ZiggyStardust - Attempting to auto load settings.
+ERROR ZiggyStardust - Settings file does not exist. 
+FILE:C:\Documents and Settings\lawinslow\My Documents\zsSettings.xml
+INFO  ZiggyStardust - Running as headless server. Create shutdown hook.
+TRACE ZiggyStardust - Autosaving is turned off or it is running as a service.
+TRACE ZiggyStardust - Stopping chains before closing.

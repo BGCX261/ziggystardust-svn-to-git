@@ -1,0 +1,100 @@
+#summary Some basic instructions for the setup and use of ziggystardust with comma separated values
+#labels Featured,Phase-Deploy
+
+=Ziggy Stardust Setup Instructions (Table Based CSV)=
+
+==Step 1==
+  * Select Add Chain on startup
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step1.jpg
+
+==Step 2==
+  * Select the parser type you're using, these instructions assume Table Based CSV
+  * For comma separated data files, select "Table Based CSV"
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step2.jpg
+
+==Step 3==
+  * Select the repository you'd like your data to flow to
+  * For GLEON members, select "GLEON Uploader"
+  * For users trying to submit data directly to the Vega Database, select "Mysql Direct"
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step3.jpg
+
+==Step 4==
+  * For additional filters to either parsing or the repository, press add on the left side
+  * If no additional filters are necessary, just press Add File, and find the data file to parse
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step4.jpg
+
+==Step 5==
+  * If there are multiple files for this data chain, add these and repeat steps 5 through 12 for each.
+  * Select the file, and press Edit File
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step5and6.jpg
+
+==Step 6==
+  * Header Row Count represents which row the "Header Row" or describer row is located. This row will then be skipped.
+  * From the drop down, select which date format you're using.
+  #1 If date/time is in one column, and represented something like: "yyyy-MM-dd HH:mm:ss" choose "String Format"
+  #2 If date/time is represented over multiple columns, choose "year, month, day, time"
+  * Then press DateTime Settings to configure
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step7.jpg
+
+==Step 7==
+  * If String Format, select the index of the date time column (remember, all indexes are zero indexed)
+  * If the format is different than the one specified, this can be changed here as well
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step8string.jpg
+
+  * If year, month, day, time, select the indexes that each field lies in (zero indexed). 
+  * The time column represents the hour of the day. This and the seconds column are optional.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step8ymd.jpg
+
+  * Press Save
+
+==Step 8==
+  * Press Add to add the first column of data.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step9a.jpg
+
+==Step 9==
+  * If the column should not be parsed, leave as ignore field and skip to step 12.
+  * Date/time columns can be left as ignored, as they're accounted for in steps 6 and 7. But these rows must still be accounted for with an ignore field.
+  * If column should be parsed, select it and press Edit.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step9b.jpg
+
+==Step 10==
+  * Select data from the drop down.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step9c.jpg
+
+==Step 11==
+  * Change the values as appropriate for this column of data, then press Save.
+  * Questions for what these fields mean can be directed towards the comments section here, or email directly to glocke at wisc dot edu and/or lawinslow at wisc dot edu.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step9d.jpg
+
+==Step 12==
+  * To add the next column, press add, and repeat steps 8 through 11.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step9e.jpg
+
+==Step 13==
+  * When editing columns is complete, close out of the edit window.
+  * Edit other monitored files as needed for this chain.
+  * When this is all complete, press Start, and data will begin to flow.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step10.jpg
+
+==Step 14== 
+  * To save these configurations for later use, select File, then either "Save Selected Chain" or "Save All Chains"
+  * Your current configuration will save and load itself on exit and startup on Ziggy, but saving it manually can then add the ability to send the chain to a different computer, and protect the chain from a lost or damaged configuration file.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/tablebasedstep14.jpg
+
+===Errors===
+  * If you receive a malformed row error, make sure you have exactly the same number of columns you're trying to parse as exist in the file (including date/time format columns).

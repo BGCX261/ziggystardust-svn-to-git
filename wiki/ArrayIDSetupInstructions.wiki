@@ -1,0 +1,91 @@
+#summary Some basic instructions for the setup and use of ziggystardust with ArrayID based values
+#labels Phase-Deploy,Featured
+
+=Ziggy Stardust Setup Instructions (CSV w/ArrayID)=
+
+==Description==
+The CSIArrayID Parser works by allowing different data column configurations in the same data file. Each column configuration works basically the same way as the Table Based Parser. These configurations are differentiated and identified by user-set ArrayID's. So for example, if some data was flowing in every minute, and included 15 columns, this could be distinguished by some ArrayID. Then if, in the same data file, data was flowing in every hour (maybe average values), and had only 8 columns, this could be distinguished with a different ArrayID, and so on.
+
+==Step 1==
+  * Select Add Chain on startup
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step1.jpg
+
+==Step 2==
+  * Select the parser type you're using, these instructions assume ArrayID
+  * For ArrayID based files, select "CSV with ArrayID"
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/Step2.jpg
+
+==Step 3==
+  * Select the repository you'd like your data to flow to
+  * For GLEON members, select "GLEON Uploader"
+  * For users trying to submit data directly to the Vega Database, select "Mysql Direct"
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step3.jpg
+
+==Step 4==
+  * For additional filters to either parsing or the repository, press add on the left side
+  * If no additional filters are necessary, just press the "..." button, and find the data file to parse
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/Step4.jpg
+
+==Step 5==
+  * To set the first ArrayID, press Add ArrayID.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/Step5.jpg
+
+==Step 6==
+  * Enter the ArrayID for this column configuration, and press OK.
+  * To set this configuration, select the ID and press Edit ArrayID.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/step6.jpg
+
+==Step 7==
+  * Press DateTime Parsing Settings. 
+  * Set the column number for each date/time field. The Time and Seconds fields are optional. Remember, these column numbers are zero indexed.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/step7.jpg
+
+  * Press Save
+
+==Step 8==
+  * Press Add to add the first column of data.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/step8.jpg
+
+==Step 9==
+  * If the column should not be parsed, leave as ignore field and skip to step TODO.
+  * Date/time columns can be left as ignored, as they're accounted for in step 7. But these rows must still be accounted for with an ignore field.
+  * If column should be parsed, select it and press Edit.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/step9.jpg
+
+==Step 10==
+  * Select data from the drop down.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step9c.jpg
+
+==Step 11==
+  * Change the values as appropriate for this column of data, then press Save.
+  * Questions for what these fields mean can be directed towards the comments section here, or email directly to glocke at wisc dot edu and/or lawinslow at wisc dot edu.
+
+http://premium1.uploadit.org/Glockstock/TableBasedSetup/Step9d.jpg
+
+==Step 12==
+  * To add the next column, press add, and repeat steps 8 through 11.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/step12.jpg
+
+==Step 13==
+  * When editing columns is complete, close out of the edit window.
+  * Edit other data column configurations by repeating steps 5 through 12 for each new ArrayID.
+  * When this is all complete, press Start, and data will begin to flow.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/step13.jpg
+
+==Step 14== 
+  * To save these configurations for later use, select File, then either "Save Selected Chain" or "Save All Chains"
+  * Your current configuration will save and load itself on exit and startup on Ziggy, but saving it manually can then add the ability to send the chain to a different computer, and protect the chain from a lost or damaged configuration file.
+
+http://premium1.uploadit.org/Glockstock/ArrayIDSetup/step14.jpg

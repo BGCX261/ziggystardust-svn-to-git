@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<sourceConfiguration>
+	<DataParserConfiguration type='CSI_TABLEBASED_CSV'>
+		<File>
+			<SourceFile>C:\gleonMadison\Data\MEBuoy\MEBuoyDataMinuteOutput.dat</SourceFile>
+			<DateTimeFormat type='CSIString'>
+                                <DateTimeColumnIndex>0</DateTimeColumnIndex>
+				<FormatString>yyyy-MM-dd HH:mm:ss</FormatString>
+			</DateTimeFormat>
+			<Columns>
+				<Column index='0'><ColType>ignore</ColType></Column>
+				<Column index='1'><ColType>ignore</ColType></Column>
+				<Column index='2'><ColType>data</ColType><MetaData><UTCOffset>-6</UTCOffset><Site>MENDOTA_BUOY</Site><Variable>DATALOGGER_BATT</Variable><Source>CFL</Source><Sensor></Sensor><Unit>V</Unit><AggMeth>Inst</AggMeth><AggSpan>00:00:00</AggSpan><Offset></Offset><OffsetType></OffsetType></MetaData></Column>
+				<Column index='3'><ColType>data</ColType><MetaData><UTCOffset>-6</UTCOffset><Site>MENDOTA_BUOY</Site><Variable>RADIO_BATT</Variable><Source>CFL</Source><Sensor></Sensor><Unit>V</Unit><AggMeth>Inst</AggMeth><AggSpan>00:00:00</AggSpan><Offset></Offset><OffsetType></OffsetType></MetaData></Column>
+			</Columns>
+		</File>
+		<File>
+			<SourceFile>C:\gleonMadison\Data\MEBuoy\MEBuoyDataMinuteOutput.dat</SourceFile>
+			<DateTimeFormat type='CSIString'>
+                                <DateTimeColumnIndex>0</DateTimeColumnIndex>
+				<FormatString>yyyy-MM-dd HH:mm:ss</FormatString>
+			</DateTimeFormat>
+			<Columns>
+				<Column index='0'><ColType>ignore</ColType></Column>
+				<Column index='1'><ColType>ignore</ColType></Column>
+				<Column index='2'><ColType>data</ColType><MetaData><UTCOffset>-6</UTCOffset><Site>MENDOTA_BUOY</Site><Variable>DATALOGGER_BATT</Variable><Source>CFL</Source><Sensor></Sensor><Unit>V</Unit><AggMeth>Mean</AggMeth><AggSpan>24:00:00</AggSpan><Offset></Offset><OffsetType></OffsetType></MetaData></Column>
+				<Column index='3'><ColType>data</ColType><MetaData><UTCOffset>-6</UTCOffset><Site>MENDOTA_BUOY</Site><Variable>RADIO_BATT</Variable><Source>CFL</Source><Sensor></Sensor><Unit>V</Unit><AggMeth>Mean</AggMeth><AggSpan>24:00:00</AggSpan><Offset></Offset><OffsetType></OffsetType></MetaData></Column>
+			</Columns>
+		</File>
+	</DataParserConfiguration>
+</sourceConfiguration>
